@@ -61,4 +61,3 @@ file=open('weibo.html','w')
 file.write(ret.text)
 file.close()
 
-print(1111111)
