@@ -9,6 +9,12 @@ import scrapy
 
 
 class MycrawlItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    guanzhu = scrapy.Field()
+    fensi = scrapy.Field()
+    weiboshu = scrapy.Field()
+    link = scrapy.Field()
+    jibeninfo = scrapy.Field()
+    lianxiinfo = scrapy.Field()
+    taginfo = scrapy.Field()
+    jobinfo = scrapy.Field()
+    jyinfo = scrapy.Field()

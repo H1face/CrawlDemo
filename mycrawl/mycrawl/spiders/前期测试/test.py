@@ -1,4 +1,36 @@
-<script type="text/javascript"> 
+# string='''if(parent.$CONFIG) {
+# # parent.$CONFIG['islogin']='1';
+# # parent.$CONFIG['oid']='6446425301';
+# # parent.$CONFIG['page_id']='1005056446425301';
+# # parent.$CONFIG['onick']='情感蚀';
+# # parent.$CONFIG['skin']='diy';
+# # parent.$CONFIG['background']='';
+# # parent.$CONFIG['scheme']='diy001';
+# # parent.$CONFIG['colors_type']='0';
+# # parent.$CONFIG['uid']='5723026318';
+# # parent.$CONFIG['nick']='睡起嗨_55514';
+# # parent.$CONFIG['sex']='m';
+# # parent.$CONFIG['watermark']='u/5723026318'; '''
+# #
+import re
+#
+# # com = re.compile("parent\\.\\$CONFIG\\['oid'\\]='(.*?)';")
+# # ret = com.findall(string)[0]
+# #
+# #
+# # print(com)
+# # print(ret)
+
+# url='https://weibo.com/u/6446425301?refer_flag=1005050006_&is_hot=1'
+# oidparttern = re.compile("https://weibo.com/u/(.*?)\\?refer_")
+# oid = oidparttern.findall(url)[0]
+# print(oid)
+#
+# import time
+# print(int(time.time()*100000))
+
+import re
+string='''<script type="text/javascript"> 
 parent.document.title = '情感蚀的微博_微博' ;
 if(parent.$CONFIG) { 
 parent.$CONFIG['islogin']='1'; 
@@ -50,4 +82,106 @@ parent.$CONFIG['pid']='100505';
 <script>parent.FM.view({"ns":"","domid":"Pl_Core_T8CustomTriColumn__53","css":["style/css/module/pagecard/PCD_counter.css?version=c21e2c76874c01b7"],"html":"\t<div class=\"WB_cardwrap S_bg2\" >\r\n\t\t\t\t\t\t<div class=\"PCD_counter\">\r\n\t\t\t\t\t\t\t<div class=\"WB_innerwrap\">\r\n\t\t\t\t\t\t\t\t<table class=\"tb_counter\" cellpadding=\"0\" cellspacing=\"0\">\r\n\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td class=\"S_line1\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a bpfilter=\"page_frame\"  class=\"t_link S_txt1\" href=\"\/\/weibo.com\/p\/1005056446425301\/follow?from=page_100505&wvr=6&mod=headfollow#place\" ><strong class=\"W_f18\">491<\/strong><span class=\"S_txt2\">关注<\/span><\/a><\/td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td class=\"S_line1\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a bpfilter=\"page_frame\"  class=\"t_link S_txt1\" href=\"\/\/weibo.com\/p\/1005056446425301\/follow?relate=fans&from=100505&wvr=6&mod=headfans&current=fans#place\" ><strong class=\"W_f18\">6865<\/strong><span class=\"S_txt2\">粉丝<\/span><\/a><\/td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td class=\"S_line1\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a bpfilter=\"page_frame\"  class=\"t_link S_txt1\" href=\"\/\/weibo.com\/p\/1005056446425301\/home?from=page_100505_profile&wvr=6&mod=data#place\" ><strong class=\"W_f18\">3056<\/strong><span class=\"S_txt2\">微博<\/span><\/a><\/td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<\/tr>\r\n\t\t\t\t\t\t\t\t\t<\/tbody>\r\n\t\t\t\t\t\t\t\t<\/table>\r\n\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t<\/div>\r\n"})</script>
 <script>parent.FM.view({"ns":"third.sunshine.index","domid":"Pl_Third_Inline__56","css":["https://img.t.sinajs.cn/t4/appstyle/V6_credit/css/module/credit.css?version=c21e2c76874c01b7"],"js":"https://service.account.weibo.com/js/sunshine/prosunshine.js?version=ffc9675f91d61c30","html":"    <div id=\"ie_show\" style=\"display:none;\">\n    \n    \n    \n    \n            <!--有信用积分 start-->\n        <div class=\"WB_cardwrap S_bg2\">\n            <div class=\"credit_wrap_box\">\n                <div class=\"WB_cardtitle_b S_line2\">\n                    <div class=\"obj_name\">\n                        <h2 class=\"main_title W_fb W_f14\"><a class=\"S_txt1\" href=\"javascript:void(0);\">阳光信用<\/a><\/h2>\n                    <\/div>\n                <\/div>\n                <div class=\"WB_innerwrap\">\n                    <div class=\"m_wrap\">\n                        <div class=\"trust_box\">\n                            <div class=\"p_bar S_bg1\">\n                                <div style=\"width:50%\" class=\"p_bar_inner ts_color2\"><\/div>\n                            <\/div>\n                            <div class=\"trust_info S_txt2\"><span class=\"info\">信用程度：<span class=\"S_txt1\">信用一般<\/span><\/span><\/div>\n                        <\/div>\n                    <\/div>\n                <\/div>\n                <a class=\"WB_cardmore S_txt1 S_line1 clearfix\" href=\"\/\/service.account.weibo.com\/sunshine\/guize\" target=\"_blank\"> <span class=\"more_txt\">查看详情<em class=\"W_ficon ficon_arrow_right S_ficon\">a<\/em><\/span><\/a> <\/div>\n        <\/div>\n        <!--有信用积分 end-->\n    <\/div>\n\n<div id=\"nie_show\" style=\"display:none;\">\n    \n    \n    \n    \n            <!--有信用积分 start-->\n        <div class=\"WB_cardwrap S_bg2\">\n            <div class=\"credit_wrap_box\">\n                <div class=\"WB_cardtitle_b S_line2\">\n                    <div class=\"obj_name\">\n                        <h2 class=\"main_title W_fb W_f14\">阳光信用<\/h2>\n                    <\/div>\n                <\/div>\n                <input type=\"hidden\" id=\"sunshine_level_num\" name=\"sunshine_level_num\" value=\"3\">\n                <div class=\"WB_innerwrap\">\n                    <div class=\"canvas_box canvas_number canvas_writing\">\n                        <canvas id=\"sunshine_test\" width=\"290\" height=\"140\"><\/canvas>\n                        <div class=\"radius_min_box radiusDifferent\">\n                            <div class=\"text_box available avable_color\">\n                                <p>信用<\/p>\n                                <p>一般<\/p>\n                            <\/div>\n                        <\/div>\n\n                        <div class=\"wrapper\">\n                            <div class=\"cerditPoint\" id=\"sunshine_point\"><\/div>\n                            <div class=\"data_start\">300<\/div>\n                            <div class=\"data_end\">900<\/div>\n                        <\/div>\n                    <\/div>\n                <\/div>\n            <\/div>\n            <a bpfilter=\"page\" href=\"\/\/service.account.weibo.com\/sunshine\/guize\" class=\"WB_cardmore S_txt1 S_line1 clearfix\" target=\"_blank\"> <span class=\"more_txt\">查看详情<em class=\"W_ficon ficon_arrow_right S_ficon\">a<\/em><\/span><\/a>\n        <\/div>\n        <!--有信用积分 end-->\n    <\/div>\n<input type=\"hidden\" id=\"sunshine_show\" name=\"sunshine_show\" value=\"2\">"})</script>
 <script>parent.FM.view({"ns":"pl.content.miniTab.index","domid":"Pl_Core_PicText__54","css":["style/css/module/pagecard/PCD_pictext_a.css?version=c21e2c76874c01b7"],"js":"page/js/pl/content/miniTab/index.js?version=ffc9675f91d61c30","html":"<div class=\"WB_cardwrap S_bg2\" >\r\n<div class=\"PCD_pictext_a PCD_pictext_a1\">\r\n\t<!-- v6 card 通用标题 -->\r\n<div class=\"WB_cardtitle_b S_line2\">\r\n\t<!-- 标题 -->\r\n\t\t<div class=\"obj_name\">\r\n\t        \t\t    \t\t<h2 class=\"main_title W_fb W_f14\">二维码<\/h2>\r\n    \t\t\t\t\t\t\t<\/div>\r\n\t\t\r\n\t<!-- 标题栏控件 -->\r\n\t<\/div>\r\n\t<div class=\"WB_innerwrap\">\r\n\t    <!-- 标题栏筛选项 -->\r\n\t\t<div class=\"m_wrap\" >\r\n\t\t\t<ul class=\"pt_ul clearfix\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"pt_li\">\r\n\t\t\t\t    <div class=\"pic_txt clearfix W_nopointer\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"pic_box\">\r\n\t\t\t\t\t\t\t<a target=\"_blank\" href=\"\" suda-data=\"key=tblog_profile_v6&amp;value=qrcodeimg\"><img class=\"pic\" src=\"\/\/qr.weibo.cn\/inf\/gen?api_key=bdc93f6ac5325648182fee881dd17f52&amp;size=128&amp;type=url&amp;redirect=0&amp;margin=0&amp;data=http%3A%2F%2Fwww.weibo.com%2Fp%2F1005056446425301%3Ffrom%3Dqrcode&amp;output_type=img&amp;title=page_web_qrshow&amp;datetime=nocheck&amp;sign=9258e6b2c254ad1783a798330e19e787\" title=\"\" alt=\"\" onload=\"this.onload=null;this.removeAttribute('onload');this.onerror=null;this.removeAttribute('onerror');\" onerror=\"this.onerror=null;this.removeAttribute('onerror'); this.parentNode.innerHTML='<i class=\\'face_card_wb\\' title=\\'默认图片\\'><\/i>';\" \/><\/a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t<div class=\"info_box S_bg1\">\r\n\t\t\t\t\t\t    <div class=\"text_box\">\r\n    \t\t\t\t\t\t\t<div class=\"title W_autocut\">\r\n    \t\t\t\t\t\t\t\t    \t\t\t\t\t\t\t\t    \t\t\t\t\t\t\t\t    \t\t\t\t\t\t\t<\/div>\r\n    \t\t\t\t\t\t\t<div class=\"text\">\r\n        \t\t\t\t\t\t\t    \t\t\t\t\t\t\t<\/div>\r\n    \t\t\t\t\t\t\t    \t\t\t\t\t\t\t<div class=\"subtitle S_txt2\">扫描二维码，可以用手机访问本页<\/div>\r\n    \t\t\t\t\t\t\t\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t\t<div class=\"opt_box\">\r\n\t\t\t\t\t\t\t<span class=\"WB_praishare\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\r\n\r\n\r\n\r\n\r\n\t\t\t\t\r\n\r\n       <a href=\"\/\/qr.weibo.cn\/inf\/gen?api_key=bdc93f6ac5325648182fee881dd17f52&amp;size=128&amp;type=url&amp;redirect=0&amp;margin=0&amp;data=http%3A%2F%2Fwww.weibo.com%2Fp%2F1005056446425301%3Ffrom%3Dqrcode&amp;output_type=down&amp;title=page_web_qrdown&amp;datetime=nocheck&amp;sign=af5cbf75f97a0ec334a6e631bcb4f851\" class=\"S_txt1\" target=\"_blank\" >\r\n   \t  下载  <\/a>\r\n  \r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<\/span>\r\n\t\t\t\t\t\t    <\/div>\r\n\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t<\/div>\r\n\t\t\t\t<\/li>\r\n\t\t\t\t\t\t\t<\/ul>\r\n\t\t<\/div>\r\n\t<\/div>\r\n<\/div>\r\n    \t\t\r\n<\/div>\r\n\r\n"})</script>
-</html>
+</html>'''
+
+from lxml import etree
+from bs4 import BeautifulSoup
+import json
+# # dom_tree = etree.HTML(string)
+# #
+# # a=dom_tree.xpath('//*[@id="Pl_Official_PersonalInfo__57"]/div[1]/div/div[2]/div/ul/li[1]/span[2]')
+# # print(a)
+
+import re
+from lxml import etree
+
+parttern = re.compile('<script>parent.FM.view\\((.*?)\\)</script>',flags=re.S)
+parttern1 = re.compile('"html":(.*?)}',flags=re.S)
+ret = parttern.findall(string)
+
+
+
+for i in ret:
+    html = parttern1.findall(i)
+    if html:
+        html=html[0]
+        dom_tree = etree.HTML(html.replace("\\",""))
+        baseinfo = dom_tree.xpath("//div[@class='PCD_text_b PCD_text_b2']") #个人信息 浮动
+        gfwinfo = dom_tree.xpath("//div[@class='PCD_counter']//strong") #关注,粉丝,点赞
+        if gfwinfo:
+            for gfw in gfwinfo:
+                print(gfw.xpath("./text()")[0])
+        if baseinfo:
+            for titlepattern in baseinfo:
+                print(titlepattern.xpath('.//h2/text()'))
+                print(titlepattern.xpath('string(.//ul)').replace(" ","").replace('\n',"").replace('\r',""))
+                print('=====')
+
+
+
+
+'''
+for i in ret:
+    html = parttern1.findall(i)
+    
+
+
+    # html[5]
+
+
+    if html:
+    #     # print(html)
+    #     html = html[0]
+    #
+    #     dom_tree = etree.HTML(html)
+    
+    
+    
+    ##############
+        i=dom_tree.xpath("//div[@class='PCD_counter']//strong")
+        for x in i:
+            print(x.xpath("./text()"))
+            #3 关注，粉丝，微博
+       ###################
+
+        # title = dom_tree.xpath("//h2[@class='main_title W_fb W_f14']/text()")
+        # if title:
+        #     i = dom_tree.xpath("//div[@class='PCD_text_b PCD_text_b2']")
+        #     if i:
+        #         print(i[0].xpath(".//h2"))
+        #         print('=' * 500)
+        #         print(html)
+        #         print('='*500)
+
+        # alluserinfo = dom_tree.xpath("//div[@id='Pl_Official_PersonalInfo__57']")
+        # if alluserinfo:
+        #     print(html)
+            # print(alluserinfo[0].xpath("//div"))
+
+
+        # title = dom_tree.xpath("//h2[@class='main_title W_fb W_f14']/text()")
+        # print(title)
+        # if title:
+        #     i = dom_tree.xpath("//div[@class='PCD_text_b PCD_text_b2']")
+        #     if i:
+        #         print(i[2].xpath('.//h2/text()'))
+
+
+            # if i:
+            #     print(i)
+            #     for x in i:
+            #         print(x)
+            #         aaa = [y.strip() for y in x.xpath("string(.//span)")]
+            #         print(''.join(aaa).split())
+
+        # print(title)
+        # print(i[1].xpath(".//span"))
+        # print(i)
+        # for x in i:
+            # print(x)
+            # print([y.strip() for y in x.xpath("string(.//span)")])
+            # for y in x.xpath("string(.//span)"):
+            #     print(y)
+
+'''
+
