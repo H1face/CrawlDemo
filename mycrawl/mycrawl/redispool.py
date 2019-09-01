@@ -6,15 +6,14 @@ import redis
 Pool = redis.ConnectionPool(host='127.0.0.1', port=6379, max_connections=10)
 redis_conn = redis.Redis(connection_pool=Pool,decode_responses=True)
 
-redis_conn.flushall()
+# redis_conn.flushall()
 print(redis_conn.scan())
-print(redis_conn.get('jinge'))
 # print(redis_conn.hscan('weibomaster:items'))
-redis_conn.lrange('weibomaster:items',0,290)
+print(redis_conn.lrange('weibomaster:infourl',0,290))
 
-# print(redis_conn.smembers('visited_urls'))
+print(redis_conn.smembers('visited_urls'))
 # print(redis_conn.scard('visited_urls'))
-# print(redis_conn.llen('csdn:start_urls'))
+print(redis_conn.lrange('weibo:start_urls',0,5))
 # print(redis_conn.lrange('csdn:start_urls',0,290))
 # print(redis_conn.scard('visited_urls'))
 

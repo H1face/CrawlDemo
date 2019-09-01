@@ -9,12 +9,5 @@ import scrapy
 
 
 class MycrawlItem(scrapy.Item):
-    guanzhu = scrapy.Field()
-    fensi = scrapy.Field()
-    weiboshu = scrapy.Field()
-    link = scrapy.Field()
-    jibeninfo = scrapy.Field()
-    lianxiinfo = scrapy.Field()
-    taginfo = scrapy.Field()
-    jobinfo = scrapy.Field()
-    jyinfo = scrapy.Field()
+    url = scrapy.Field()
+

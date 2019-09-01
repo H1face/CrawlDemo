@@ -5,7 +5,8 @@
 # See documentation in:
 # https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-mycookie='SINAGLOBAL=3421616684015.8022.1553341957702; YF-V5-G0=27518b2dd3c605fe277ffc0b4f0575b3; _s_tentry=-; Apache=7384080538721.845.1560491267723; ULV=1560491268670:2:1:1:7384080538721.845.1560491267723:1553341957713; Ugrow-G0=5c7144e56a57a456abed1d1511ad79e8; TC-Page-G0=c4376343b8c98031e29230e0923842a5|1563515423|1563515423; TC-V5-G0=4e714161a27175839f5a8e7411c8b98c; login_sid_t=b8c891f44a7796ade4811399a8931ea3; cross_origin_proto=SSL; WBtopGlobal_register_version=307744aa77dd5677; wb_view_log=1920*10801; UOR=,,graph.qq.com; SCF=Ap2R5FUd7cMhzjpENYwuxB1rp5-YfOf0E-VWPgO0qXJRUVA8x6Fvxe-QkqJGrWJcPtz7jfiH6IlqzvY61phdlGE.; SUB=_2A25wbLmcDeRhGeNJ6VER8ijPyjSIHXVTG6xUrDV8PUNbmtBeLXTYkW9NS_yBOzkJhCiATvVeHwhE5Ubh0pQ8tUn6; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WFf1rjr6QrnVVwMgQP9Dg9f5JpX5K2hUgL.Fo-Neoe7eoq0eKn2dJLoIE2LxKML1-BLBK2LxKnLBo-LBoMLxK-L1KMLBKykSK-feKBt; SUHB=0wn1psQVQyAacV; ALF=1567753291; SSOLoginState=1567148492; un=15606907698; wb_view_log_5723026318=1920*10801; YF-Page-G0=aac25801fada32565f5c5e59c7bd227b|1567150693|1567150641; webim_unReadCount=%7B%22time%22%3A1567151129933%2C%22dm_pub_total%22%3A1%2C%22chat_group_client%22%3A0%2C%22allcountNum%22%3A8%2C%22msgbox%22%3A0%7D'
+mycookie='SINAGLOBAL=3421616684015.8022.1553341957702; YF-V5-G0=27518b2dd3c605fe277ffc0b4f0575b3; _s_tentry=-; Apache=7384080538721.845.1560491267723; ULV=1560491268670:2:1:1:7384080538721.845.1560491267723:1553341957713; Ugrow-G0=5c7144e56a57a456abed1d1511ad79e8; TC-Page-G0=c4376343b8c98031e29230e0923842a5|1563515423|1563515423; TC-V5-G0=4e714161a27175839f5a8e7411c8b98c; login_sid_t=b8c891f44a7796ade4811399a8931ea3; cross_origin_proto=SSL; WBtopGlobal_register_version=307744aa77dd5677; SSOLoginState=1567148492; un=15606907698; UOR=,,www.guofenchaxun.com; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WFf1rjr6QrnVVwMgQP9Dg9f5JpX5K-hUgL.Fo-Neoe7eoq0eKn2dJLoIE2LxKML1-BLBK2LxKnLBo-LBoMLxK-L1KMLBKykSK-feKBt; ALF=1598771763; wvr=6; wb_view_log_5723026318=1920*10801; wb_view_log=1920*10801; SCF=Ap2R5FUd7cMhzjpENYwuxB1rp5-YfOf0E-VWPgO0qXJRbHzTlTdDMEX_4RyFfb7vLw6xIEBOzyYE5wjsA2AktI4.; SUB=_2A25wbu9WDeRhGeNJ6VER8ijPyjSIHXVTGkeerDV8PUJbmtBeLWTMkW9NS_yBOyGyQzG2hU5xeV6_TeaQAQBPt2sD; SUHB=09P9eXkbagqtc8; YF-Page-G0=761bd8cde5c9cef594414e10263abf81|1567268614|1567268484; webim_unReadCount=%7B%22time%22%3A1567268634923%2C%22dm_pub_total%22%3A1%2C%22chat_group_client%22%3A0%2C%22allcountNum%22%3A13%2C%22msgbox%22%3A0%7D'
+mycookie1='Ugrow-G0=1ac418838b431e81ff2d99457147068c; login_sid_t=ba5d79eb633971cbe2a3069b1dfd44ce; cross_origin_proto=SSL; YF-V5-G0=8c4aa275e8793f05bfb8641c780e617b; WBStorage=f54cf4e4362237da|undefined; _s_tentry=passport.weibo.com; wb_view_log=1920*10801; Apache=4931562183850.195.1567342025473; SINAGLOBAL=4931562183850.195.1567342025473; ULV=1567342025481:1:1:1:4931562183850.195.1567342025473:; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9Wh8-1bMv9ayDxQKB0xKO.ni5JpX5K2hUgL.Fo-Eeo.EShMfe0z2dJLoI0qLxKBLBonL12BLxKnLB.qLBoMLxK.L1h5L1KBLxKML1-2L1hBLxKMLB.-L122LxKMLB.-L1KBt; ALF=1598878040; SSOLoginState=1567342041; SCF=AiqaUs1khBXFk4bZwhUGDW53Au4brdyKDB1eZJBX4tXCV2UfHZpQj6RH45Y5BP_NisFjWnYILzv0bYKiP4YTeso.; SUB=_2A25wb82JDeRhGeNM6VsT9CnJyD6IHXVTHLhBrDV8PUNbmtBeLWbGkW9NTiROLo3-lJ8YfQxGxCkHwzJUpCm-sYVh; SUHB=04WeumiqU9GmqO; un=13735357017; wvr=6; wb_view_log_5229247532=1920*10801; YF-Page-G0=112e41ab9e0875e1b6850404cae8fa0e|1567342068|1567342043; webim_unReadCount=%7B%22time%22%3A1567342080686%2C%22dm_pub_total%22%3A0%2C%22chat_group_client%22%3A0%2C%22allcountNum%22%3A3%2C%22msgbox%22%3A0%7D'
 def cookieserialize(cookie):
     dict_ = {}
     ret = cookie.split(';')
@@ -19,7 +20,18 @@ def cookieserialize(cookie):
             dict_[key.strip()] = value.strip()
     return dict_
 
-ret = cookieserialize(mycookie)
+# ret = cookieserialize(mycookie)
+
+import random
+
+class Proxyuser():
+    userpool=[
+        cookieserialize(mycookie),cookieserialize(mycookie1)
+           ]
+    def __getattr__(self, name):
+        return Proxyuser.name[random.randint(0,1)]
+
+pool=Proxyuser()
 
 from scrapy import signals
 
@@ -85,7 +97,9 @@ class MycrawlDownloaderMiddleware(object):
         return s
 
     def process_request(self, request, spider):
-        request.cookies=ret
+        request.cookies=pool.userpool[0]
+
+
         # Called for each request that goes through the downloader
         # middleware.
 

@@ -102,3 +102,7 @@ DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
 ITEM_PIPELINES = {
     'scrapy_redis.pipelines.RedisPipeline': 100,
 }
+REDIS_ITEMS_KEY = '%(spider)s:items'
+
+USER_AGENT='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36'
+DOWNLOAD_DELAY = 2

@@ -4,84 +4,83 @@ from scrapy.linkextractors import LinkExtractor
 
 from scrapy_redis.spiders import RedisCrawlSpider
 
-import scrapy
-from scrapy_redis.spiders import RedisSpider
 import re
 import time
+import scrapy
 from lxml import etree
-from mycrawl.items import MycrawlItem
+from scrapy_redis.spiders import RedisSpider
+from mycrawl.redispool import redis_conn
+
+fensipage1='''https://weibo.com/p/1005051879601851/follow?
+relate=fans&from=100505&wvr=6&
+mod=headfans&current=fans&ajaxpagelet=1&ajaxpagelet_v6=1&__ref=%2Fu%2F1879601851%3Frefer_flag%3D1005050008_%26is_hot%3D1&_t=FM_156734379264022'''
 
 pageurl1 = '''https://weibo.com/p/100505{0}/follow?from=page_100505&wvr=6&mod=headfollow&ajaxpagelet=1&ajaxpagelet_v6=1
 __ref=%2Fp%2F100505{0}%2Fhome%3Ffrom%3Dpage_100505%26mod%3DTAB%26is_hot%3D1%23place&_t=FM_{1}'''
-
 pageurlN = '''https://weibo.com/p/100505{0}/follow?pids=Pl_Official_HisRelation__59&
 page={2}&ajaxpagelet=1&ajaxpagelet_v6=1&
 __ref=%2Fp%2F100505{0}%2Ffollow%3Ffrom%3Dpage_100505%26wvr%3D6%26mod%3Dheadfollow%23place&
 _t=FM_{1}'''
-
 userinfourl = '''https://weibo.com/p/100505{0}/info?mod=pedit_more
 &ajaxpagelet=1&ajaxpagelet_v6=1
 &__ref=%2Fu%2F{0}%3Frefer_flag%3D1005050006_%26is_hot%3D1&_t=FM_{1}'''
-
+usermainurl='''https://weibo.com/u/{0}?refer_flag=1005050008_&is_hot=1'''
+parttern_mainurl = re.compile('https://weibo\.com/u/([0-9]+)')
+parttern_1 = re.compile('<script>parent.FM.view\\((.*?)\\)</script>', flags=re.S)
+parttern_2=re.compile('"html":(.*?)}', flags=re.S)
+parttern_3 = re.compile('uid=([0-9]+)&')
 
 class MySpider(RedisSpider):
     name = 'weibomaster'
     redis_key = 'weibocrawler:start_urls'
-
-    # allowed_domains = ['weibo.com']
+    allowed_domains = ['weibo.com']
 
     def parse(self, response):
-        parttern = re.compile('https://weibo\.com/u/([0-9]+)')
+        parttern = parttern_mainurl
         oid = parttern.findall(response.url)[0]
         # 构造  异步请求
 
         # 个人信息
-        yield scrapy.Request(url=userinfourl.format(oid, int(time.time() * 100000)),meta={'url':response.url}, callback=self.userinfoparse)
+        url=userinfourl.format(oid, int(time.time() * 100000))
+        redis_conn.lpush("weibomaster:infourl", url)
+
 
         # 关注列表
-        # for page in range(1, 6):
-        #     if page == 1:
-        #         yield scrapy.Request(url=pageurl1.format(oid, int(time.time() * 100000)),callback=self.userlinkparse)
-        #     else:
-        #         yield scrapy.Request(url=pageurlN.format(oid, page, int(time.time() * 100000)),
-        #                              callback=self.userlinkparse)
+        for page in range(1, 6):#写死了，不一定有5页,这里感觉用粉丝更好不该用关注找
+            if page == 1:
+                yield scrapy.Request(url=pageurl1.format(oid, int(time.time() * 100000)),callback=self.userlinkparsepage1)
+            else:
+                yield scrapy.Request(url=pageurlN.format(oid, int(time.time() * 100000), page),
+                                     callback=self.userlinkparsepageN)
 
-    def userlinkparse(self, response):
-        pass
-
-    def userinfoparse(self, response):
-        parttern = re.compile('<script>parent.FM.view\\((.*?)\\)</script>', flags=re.S)
-        parttern1 = re.compile('"html":(.*?)}', flags=re.S)
-        ret = parttern.findall(response.text)
-        gfwlist=[]
-        infodict={}
-        for i in ret:
-            html = parttern1.findall(i)
-            if html:
-                html = html[0]
-                dom_tree = etree.HTML(html.replace("\\", ""))
-                baseinfo = dom_tree.xpath("//div[@class='PCD_text_b PCD_text_b2']")  # 个人信息 浮动
-                gfwinfo = dom_tree.xpath("//div[@class='PCD_counter']//strong")  # 关注,粉丝,微博数
-                if gfwinfo:
-                    for gfw in gfwinfo:
-                        gfwlist.append(gfw.xpath("./text()")[0])
-                if baseinfo:
-                    for titlepattern in baseinfo:
-                        title = titlepattern.xpath('.//h2/text()')[0]
-                        info = titlepattern.xpath('string(.//ul)').replace(" ", "").replace('\n', "").replace('\r',
-                                                                                                             "").replace(
-                            'rn', '')
-                        infodict[title]=info
+    def userlinkparsepage1(self, response):
+        ret = parttern_1.findall(response.text)
+        for item in ret:
+            html2 = parttern_2.findall(item)
+            if html2:
+                html2=html2[0]
+                dom_tree = etree.HTML(html2.replace("\\", ""))
+                userlink = dom_tree.xpath("//li[@class='follow_item S_line2']/@action-data")
+                if userlink:
+                    for i in userlink:
+                        uid = parttern_3.match(i)
+                        if uid:
+                            uid = uid.group(1)
+                            yield scrapy.Request(url=usermainurl.format(uid))
 
 
-        obj = MycrawlItem(guanzhu=gfwlist[0], fensi=gfwlist[1], weiboshu=gfwlist[2], link=response.meta['url'],
-                          jibeninfo=infodict.get('基本信息','null'),lianxiinfo=infodict.get('联系信息','null'),
-                          taginfo=infodict.get('标签信息', 'null'),jobinfo=infodict.get('工作信息', 'null'),
-                          jyinfo=infodict.get('教育信息', 'null'),
+    def userlinkparsepageN(self, response):
+        ret = parttern_1.findall(response.text)[0]
+        html = parttern_2.findall(ret)[0]
+        dom_tree = etree.HTML(html.replace("\\", ""))
+        userlink = dom_tree.xpath("//li[@class='follow_item S_line2']/@action-data")
+        for i in userlink:
+            uid = parttern_3.match(i)
+            if uid:#个别非数字id
+                uid=uid.group(1)
+                yield scrapy.Request(url=usermainurl.format(uid))
 
-                          )
-        print(obj)
-        yield obj
+
 
 
 # 起始url
