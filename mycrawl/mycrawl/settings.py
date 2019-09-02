@@ -94,7 +94,8 @@ DOWNLOADER_MIDDLEWARES = {
 
 REDIS_HOST = '127.0.0.1'                            # 主机名
 REDIS_PORT = 6379                                   # 端口
-SCHEDULER_QUEUE_CLASS = 'scrapy_redis.queue.FifoQueue'
+# SCHEDULER_QUEUE_CLASS = 'scrapy_redis.queue.FifoQueue'
+SCHEDULER_QUEUE_CLASS = "scrapy_redis.queue.SpiderPriorityQueue"
 SCHEDULER_PERSIST = True  # 是否在关闭时候保留原来的调度器和去重记录，True=保留，False=清空
 SCHEDULER_FLUSH_ON_START = False  # 是否在开始之前清空 调度器和去重记录，True=清空，False=不清空
 SCHEDULER = "scrapy_redis.scheduler.Scheduler"

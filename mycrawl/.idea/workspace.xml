@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e35f329-eebe-45ae-93df-045c41b42c71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mycrawl/spiders/fans.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mycrawl/spiders/关注page1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mycrawl/111.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mycrawl/oid.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mycrawl/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/mycrawl/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mycrawl/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/mycrawl/middlewares.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mycrawl/redispool.py" beforeDir="false" afterPath="$PROJECT_DIR$/mycrawl/redispool.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mycrawl/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mycrawl/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycrawl/spiders/fans.py" beforeDir="false" afterPath="$PROJECT_DIR$/mycrawl/spiders/fans.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mycrawl/spiders/weibo.py" beforeDir="false" afterPath="$PROJECT_DIR$/mycrawl/spiders/weibo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mycrawl/spiders/关注.py" beforeDir="false" afterPath="$PROJECT_DIR$/mycrawl/spiders/关注.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycrawl/spiders/关注.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycrawl/spiders/关注page1.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,20 +22,21 @@
     <SUITE FILE_PATH="coverage/mycrawl$test.coverage" NAME="test Coverage Results" MODIFIED="1567211265709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mycrawl/spiders" />
     <SUITE FILE_PATH="coverage/mycrawl$xpathtest.coverage" NAME="xpathtest Coverage Results" MODIFIED="1567210559539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mycrawl/spiders" />
     <SUITE FILE_PATH="coverage/mycrawl$requeststest.coverage" NAME="requeststest Coverage Results" MODIFIED="1567224956346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mycrawl/spiders" />
-    <SUITE FILE_PATH="coverage/mycrawl$fans.coverage" NAME="fans Coverage Results" MODIFIED="1567344516742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mycrawl/spiders" />
+    <SUITE FILE_PATH="coverage/mycrawl$fans.coverage" NAME="fans Coverage Results" MODIFIED="1567345506425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mycrawl/spiders" />
     <SUITE FILE_PATH="coverage/mycrawl$.coverage" NAME="关注 Coverage Results" MODIFIED="1567318938918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mycrawl/spiders" />
-    <SUITE FILE_PATH="coverage/mycrawl$page1.coverage" NAME="关注page1 Coverage Results" MODIFIED="1567319884782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mycrawl/spiders" />
-    <SUITE FILE_PATH="coverage/mycrawl$start__1_.coverage" NAME="start (1) Coverage Results" MODIFIED="1567342543664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mycrawl$redispool.coverage" NAME="redispool Coverage Results" MODIFIED="1567343703370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mycrawl" />
+    <SUITE FILE_PATH="coverage/mycrawl$oid.coverage" NAME="oid Coverage Results" MODIFIED="1567349575798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mycrawl" />
+    <SUITE FILE_PATH="coverage/mycrawl$page1.coverage" NAME="关注page1 Coverage Results" MODIFIED="1567346129489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mycrawl/spiders" />
+    <SUITE FILE_PATH="coverage/mycrawl$start__1_.coverage" NAME="start (1) Coverage Results" MODIFIED="1567349817607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mycrawl$redispool.coverage" NAME="redispool Coverage Results" MODIFIED="1567354992431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mycrawl" />
     <SUITE FILE_PATH="coverage/mycrawl$start.coverage" NAME="start Coverage Results" MODIFIED="1567244444609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mycrawl" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mycrawl/spiders/weibo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="62" />
+            <state relative-caret-position="292">
+              <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
               <folding>
                 <element signature="e#24#55#0" expanded="true" />
               </folding>
@@ -43,14 +44,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mycrawl/spiders/fans.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/start.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
-              <folding>
-                <element signature="e#62444#62453#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mycrawl/oid.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="791">
+              <caret line="90" selection-start-line="90" selection-end-line="90" />
             </state>
           </provider>
         </entry>
@@ -67,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mycrawl/redispool.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="195">
+              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -85,8 +92,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mycrawl/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1605">
-              <caret line="107" column="18" selection-start-line="107" selection-start-column="18" selection-end-line="107" selection-end-column="18" />
+            <state relative-caret-position="182">
+              <caret line="97" selection-start-line="97" selection-end-line="97" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/scrapy_redis/queue.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="99" column="30" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/scrapy/settings/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -100,23 +125,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mycrawl/spiders/userlink.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64755">
-              <caret line="153" column="30" selection-start-line="153" selection-start-column="30" selection-end-line="153" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -137,11 +153,12 @@
       <find>ITEM_PIPELINES</find>
       <find>\xe6</find>
       <find>User-Agent</find>
-      <find>dela</find>
-      <find>;</find>
       <find>13</find>
       <find>page</find>
       <find>bpfilter</find>
+      <find>uid=</find>
+      <find>;</find>
+      <find>dela</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -167,13 +184,15 @@
         <option value="$PROJECT_DIR$/mycrawl/items.py" />
         <option value="$PROJECT_DIR$/mycrawl/spiders/111.html" />
         <option value="$PROJECT_DIR$/mycrawl/spiders/关注.py" />
-        <option value="$PROJECT_DIR$/mycrawl/spiders/关注page1.py" />
         <option value="$PROJECT_DIR$/../../csdn爬虫/jj1/jj/settings.py" />
-        <option value="$PROJECT_DIR$/mycrawl/redispool.py" />
-        <option value="$PROJECT_DIR$/mycrawl/settings.py" />
         <option value="$PROJECT_DIR$/mycrawl/middlewares.py" />
-        <option value="$PROJECT_DIR$/mycrawl/spiders/weibo.py" />
         <option value="$PROJECT_DIR$/mycrawl/spiders/fans.py" />
+        <option value="$PROJECT_DIR$/mycrawl/spiders/关注page1.py" />
+        <option value="$PROJECT_DIR$/mycrawl/settings.py" />
+        <option value="$PROJECT_DIR$/mycrawl/redispool.py" />
+        <option value="$PROJECT_DIR$/mycrawl/111.html" />
+        <option value="$PROJECT_DIR$/mycrawl/oid.py" />
+        <option value="$PROJECT_DIR$/mycrawl/spiders/weibo.py" />
       </list>
     </option>
   </component>
@@ -242,29 +261,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.fans">
-    <configuration name="关注" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="mycrawl" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mycrawl/spiders" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mycrawl/spiders/关注.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.start (1)">
     <configuration name="fans" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="mycrawl" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -279,6 +276,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mycrawl/spiders/fans.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="oid" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="mycrawl" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mycrawl" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mycrawl/oid.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -355,11 +374,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.fans" />
         <item itemvalue="Python.redispool" />
         <item itemvalue="Python.start (1)" />
+        <item itemvalue="Python.oid" />
         <item itemvalue="Python.关注page1" />
-        <item itemvalue="Python.关注" />
+        <item itemvalue="Python.fans" />
       </list>
     </recent_temporary>
   </component>
@@ -374,7 +393,7 @@
       <option name="presentableId" value="Default" />
       <updated>1567153013878</updated>
       <workItem from="1567153015309" duration="25093000" />
-      <workItem from="1567241228529" duration="31396000" />
+      <workItem from="1567241228529" duration="40101000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1567163262265</created>
@@ -397,11 +416,18 @@
       <option name="project" value="LOCAL" />
       <updated>1567263163944</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="测试">
+      <created>1567344651458</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1567344651459</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56489000" />
+    <option name="totallyTimeSpent" value="65194000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -511,13 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/start.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mycrawl/pipelines.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -600,23 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mycrawl/spiders/关注.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="12" />
-          <folding>
-            <element signature="e#103695#103704#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../csdn爬虫/jj1/jj/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mycrawl/spiders/userlink.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64755">
@@ -631,24 +633,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mycrawl/settings.py">
+    <entry file="file://$PROJECT_DIR$/mycrawl/spiders/fans.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1605">
-          <caret line="107" column="18" selection-start-line="107" selection-start-column="18" selection-end-line="107" selection-end-column="18" />
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="e#62444#62453#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mycrawl/middlewares.py">
+    <entry file="file://$PROJECT_DIR$/../../csdn爬虫/jj1/jj/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="98" column="47" selection-start-line="98" selection-start-column="47" selection-end-line="98" selection-end-column="47" />
+        <state relative-caret-position="1235">
+          <caret line="118" column="38" selection-start-line="118" selection-start-column="38" selection-end-line="118" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mycrawl/redispool.py">
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/scrapy/settings/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="150">
+          <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/scrapy_redis/queue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="99" column="30" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycrawl/spiders/关注.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14580">
+          <caret selection-end-column="12" />
+          <folding>
+            <element signature="e#103695#103704#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycrawl/spiders/关注page1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycrawl/111.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycrawl/oid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="791">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
         </state>
       </provider>
     </entry>
@@ -659,29 +702,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mycrawl/spiders/关注page1.py">
+    <entry file="file://$PROJECT_DIR$/mycrawl/middlewares.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="11" />
+        <state relative-caret-position="1470">
+          <caret line="98" column="47" selection-start-line="98" selection-start-column="47" selection-end-line="98" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycrawl/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="97" selection-start-line="97" selection-end-line="97" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycrawl/redispool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mycrawl/spiders/weibo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="62" />
+        <state relative-caret-position="292">
+          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
           <folding>
             <element signature="e#24#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycrawl/spiders/fans.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
-          <folding>
-            <element signature="e#62444#62453#0" expanded="true" />
           </folding>
         </state>
       </provider>
